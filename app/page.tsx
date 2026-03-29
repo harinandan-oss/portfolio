@@ -53,7 +53,8 @@ export default function Home() {
       } else {
         setStatus("error");
       }
-    } catch {
+    } catch (e) {
+      console.error(e);
       setStatus("error");
     }
   };
